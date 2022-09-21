@@ -1,4 +1,4 @@
-##FIRST PHASE:
+## FIRST PHASE:
 
 **Description**
 At the first stage, you need to develop a simple JSON API that always returns the same quiz to be solved. The API should support only two operations: getting the quiz and solving it by passing an answer. Each operation is described in more detail below.
@@ -22,7 +22,7 @@ The server should return JSON with two fields: success (true or false) and feedb
 {"success":false,"feedback":"Wrong answer! Please, try again."}
 You can write any other strings in the feedback field, but the names of the fields and the true/false values must match this example.
  
-##SECOND PHASE:
+## SECOND PHASE:
 
 **Description**
 At this stage, you will improve the web service to create, get and solve lots of quizzes, not just a single one. All quizzes should be stored in the service's memory, without an external storage.
@@ -88,7 +88,7 @@ The service returns a JSON with two fields: success (true or false) and feedback
 •	If the specified quiz does not exist, the server returns the 404 (Not found) status code.
 You can write any other strings in the feedback field, but the names of fields and the true/false values must match this example.
  
-##THIRD PHASE:
+## THIRD PHASE:
 
 **Description**
 Currently, your service allows creating new quizzes, but there may be problems if the client didn't provide all the quiz data. In such cases, the service will create an incorrect unsolvable quiz which is very frustrating for those who are trying to solve it.
@@ -163,7 +163,7 @@ spring.jpa.show-sql=true
 To start using this database, you need to map your classes to database tables using the JPA annotations and Spring Repositories.
 You can use any tables in your database to complete this stage. The main thing is that when you restart the service, quizzes should not be lost. Our tests will create and get them via the API developed at the previous stages.
  
-##FIFTH PHASE:
+## FIFTH PHASE:
 
 **Description**
 Your service already has a well-designed API and stores all the quizzes in the database. At this stage, you will improve the service to support users and the authorization process. This will allow you to provide different privileges to the users and understand what do they do in the service.
@@ -199,7 +199,7 @@ Additional ideas
 If you would like your service to support more operations, add PUT or PATCH to update existing quizzes in the similar way as DELETE. Our tests will not verify these operations.
 
  
-##SIXTH PHASE:
+## SIXTH PHASE:
 
 **Description**
 At this last stage, your service will be improved to perform some trickier requests and return paginated responses. From the client's point of view, only a small part of API will be changed here.
